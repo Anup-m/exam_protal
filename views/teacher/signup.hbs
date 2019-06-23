@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h3>Signup</h3>
+                    <form action="./signup" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" placeholder="Email" class="form-control"
+                                required>
+                        </div>
+                       <div class="form-group">
+                            <input type="text" name="mobile" id="mobile" placeholder="Mobile" class="form-control"
+                                required>
+                        </div>
+                        <select name="department" class="form-control">
+                            {{#each departments }}
+                            <option value="{{ this.dept_name }}">{{ this.dept_name }}</option>
+                            {{/each}}
+                        </select> <br />
+                        <div class="form-group">
+                            <input type="password" name="password" id="password" placeholder="Password" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" class="form-control"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="signup" value="signup">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<% include ('./views/header.ejs'); %>
+
+
+<form action='./register' method = 'post'>
+    name:<input type='text' name='name' id='name'/><br>
+    email:<input type='email' name='email' id= 'email'/><br>    
+    password:<input type='password' name='password' id='password'/><br>
+    Department:<input type='text' name='department'id='department'/><br>
+    mobile:<input type='number'name='mobileNo'id='mobileNo'/><br>
+
+    <button name='btnSubmit' id='btnSubmit'>Submit</button>
+</form>
+<%- include ('../footer.ejs'); -%>
+   
